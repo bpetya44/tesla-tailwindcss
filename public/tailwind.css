@@ -564,6 +564,7 @@ html {
 }
 
 .car_section{
+  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -602,6 +603,13 @@ html {
   text-decoration-line: underline;
 }
 
+.tag_line_no_underline{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(76 77 81 / var(--tw-text-opacity));
+}
+
 .car_buttons{
   position: absolute;
   top: 85%;
@@ -635,4 +643,29 @@ html {
   --tw-bg-opacity: 0.6;
   --tw-text-opacity: 1;
   color: rgb(57 60 65 / var(--tw-text-opacity));
+}
+
+.down_svg{
+  position: absolute;
+  top: 90%;
+  margin-top: 2.5rem;
+  display: block;
+  height: 3rem;
+  width: 100%;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.down_svg{
+  animation: bounce 1s infinite;
 }

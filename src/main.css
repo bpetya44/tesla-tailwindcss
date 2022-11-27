@@ -21,7 +21,7 @@ html {
 }
 
 .car_section {
-     @apply w-full h-screen;
+     @apply w-full h-screen relative;
 }
 
 .car_image {
@@ -44,6 +44,10 @@ html {
     @apply text-2xl text-[#4c4d51] underline cursor-pointer;
 }
 
+.tag_line_no_underline {
+    @apply text-2xl text-[#4c4d51];
+}
+
 .car_buttons {
     @apply flex absolute top-[85%] left-[50%];
 }
@@ -54,4 +58,8 @@ html {
 
 .inventory-btn {
     @apply text-[#393c41] bg-white bg-opacity-60 ml-8;
+}
+
+.down_svg {
+    @apply block w-full h-12 mt-10 absolute top-[90%] animate-bounce;
 }
