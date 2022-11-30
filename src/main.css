@@ -15,7 +15,7 @@ html {
 }
 
 .nav_link {
-  @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] py-[0.4rem] rounded-[0.4rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 hover:px-4 hover:py-2 transition-all duration-300;
+  @apply text-xl font-semibold text-[#181b21] mx-[0.8rem] py-[0.4rem] rounded-[0.4rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 hover:px-4 hover:py-2 transition-all duration-300;
 }
 
 .car_section {
@@ -47,7 +47,7 @@ html {
 }
 
 .car_buttons {
-  @apply flex absolute top-[85%] left-[50%] flex flex-col lg:flex-row;
+  @apply flex absolute top-[85%] left-[50%] flex-col lg:flex-row;
 }
 
 .btn {
@@ -60,4 +60,8 @@ html {
 
 .down_svg {
   @apply block w-full h-12 mt-10 absolute top-[90%] animate-bounce;
+}
+
+.footer {
+    @apply flex flex-col items-center sm:flex-row gap-2 text-[#393c41] text-sm font-semibold text-center bg-white m-10;
 }

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss build -i src/main.css -o public/tailwind.css",
-    "watch": "npx tailwindcss build -i src/main.css -o public/tailwind.css -w",
-    "prettier": "npx prettier --write **/src/*.css"
+    "build": "tailwind build -i src/main.css -o public/tailwind.css",
+    "watch": "tailwind build -i src/main.css -o public/tailwind.css -w",
+    "prettier": "npm prettier --write **/src/*.css"
   },
   "keywords": [],
   "author": "",
