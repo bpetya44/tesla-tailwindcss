@@ -548,8 +548,13 @@ video {
   min-height: 100vh;
 }
 
-.w-5\/12{
-  width: 41.666667%;
+.min-w-fit{
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .max-w-4xl{
@@ -668,7 +673,7 @@ html {
   color: rgb(24 27 33 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 500ms;
 }
 
 .nav_link:hover{
@@ -680,13 +685,9 @@ html {
   padding-bottom: 0.5rem;
 }
 
-.mobile{
-  text-align: left;
-}
-
 .mobile:hover{
-  padding-left: 8rem;
-  padding-right: 8rem;
+  scroll-padding-left: 1rem;
+  scroll-padding-right: 1rem;
 }
 
 .car_section{
