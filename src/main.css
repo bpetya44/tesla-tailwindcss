@@ -25,11 +25,11 @@ html {
 }
 
 .nav_link {
-  @apply text-xl font-semibold text-[#181b21] mx-[0.8rem] py-[0.4rem] rounded-[0.4rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 hover:px-4 hover:py-2 transition-all duration-500;
+  @apply text-xl font-semibold text-[#181b21] mx-[0.8rem] py-[0.4rem] rounded-[0.4rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 hover:px-4 hover:py-2 transition-all duration-300;
 }
 
 .mobile {
-  @apply hover:scroll-px-4;
+  @apply hover:px-20;
 }
 
 .car_section {
