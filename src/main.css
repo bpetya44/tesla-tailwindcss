@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .section-min-height {
+        min-height: calc(100vh - 68px);
+    }
+
+    .toggle-btn{
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[360deg]
+    }
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -16,6 +26,10 @@ html {
 
 .nav_link {
   @apply text-xl font-semibold text-[#181b21] mx-[0.8rem] py-[0.4rem] rounded-[0.4rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 hover:px-4 hover:py-2 transition-all duration-300;
+}
+
+.mobile {
+  @apply text-left hover:px-32;
 }
 
 .car_section {
@@ -62,6 +76,6 @@ html {
   @apply block w-full h-12 mt-10 absolute top-[90%] animate-bounce;
 }
 
-.footer {
-    @apply flex flex-col items-center sm:flex-row gap-2 text-[#393c41] text-sm font-semibold text-center bg-white m-10;
+.footer nav{
+    @apply flex flex-col justify-items-center items-center mx-auto sm:flex-row  gap-2 text-[#393c41] text-sm font-semibold text-center bg-white m-10;
 }

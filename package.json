@@ -2,7 +2,7 @@
   "name": "tailwind-tesla",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
     "build": "tailwind build -i src/main.css -o public/tailwind.css",
     "watch": "tailwind build -i src/main.css -o public/tailwind.css -w",

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./tailwind.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    
     <title>Electric Cars, Solar & Clean Energy | Tesla</title>
   </head>
   <body>
@@ -27,8 +28,30 @@
       <div class="flex lg:flex-row">
         <a href="#shop" class="nav_link hidden lg:block">Shop</a>
         <a href="#account" class="nav_link hidden lg:block">Account</a>
-        <a href="#menu" class="nav_link">Menu</a>
+        <a href="#menu" id="menu_btn" class="nav_link" >Menu</a>
       </div>
+
+      <!-- mobile menu -->
+      <section
+        id="mobile-menu"
+        class="top-0 right-0 absolute hidden w-5/12 origin-right animate-open-menu flex-col justify-center bg-white"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+            &times;
+          </button> -->
+
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#modelS" class="nav_link mobile"
+            >Model S</a
+          >
+
+    
+        </nav>
+      </section>
+      <!-- end mobile menu -->
     </header>
 
     <!-- Model S Section Start -->
@@ -228,52 +251,44 @@
     </section>
     <!-- Solar Panels Section End -->
 
-     <!-- Accessories Section Start -->
-     <section id="accessories" class="car_section">
-        <img
-          src="./images/accessories.jpeg"
-          alt="Accessories image"
-          class="car_image"
-        />
-  
-        <div class="car_details transform_50">
-          <h1 class="model_name">Accessories</h1>
-        </div>
-  
-        <div class="car_buttons transform_50">
-          <button class="btn">Shop Now</button>
-        </div>
-      </section>
-      <!-- Accessories Section End -->
+    <!-- Accessories Section Start -->
+    <section id="accessories" class="car_section">
+      <img
+        src="./images/accessories.jpeg"
+        alt="Accessories image"
+        class="car_image"
+      />
+
+      <div class="car_details transform_50">
+        <h1 class="model_name">Accessories</h1>
+      </div>
+
+      <div class="car_buttons transform_50">
+        <button class="btn">Shop Now</button>
+      </div>
+    </section>
+    <!-- Accessories Section End -->
 
     <!-- Footer -->
     <footer class="footer">
-        <div><a href="#">
-            Tesla &copy; <span id="year">2022</span>
-        </a></div>
-        <div><a href="#">
-            Privacy & Legal
-        </a></div>
-        <div><a href="#">
-            Vehicle Recalls
-        </a></div>
-        <div class="hidden md:flex"><a href="#">
-            Contact
-        </a></div>
-        <div><a href="#">
-            Careers
-        </a></div>
-        <div><a href="#">
-            News
-        </a></div>
-        <div class="hidden md:flex"><a href="#">
-            Engage
-        </a></div>
-        <div class="hidden md:flex"><a href="#">
-            Locations
-        </a></div>
+      <section
+      class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+    >
+      <nav>
+        <a href="#"> Tesla &copy; <span id="year">2022</span> </a>
+      
+      <a href="#"> Privacy & Legal </a>
+      <a href="#"> Vehicle Recalls </a>
+      <a href="#" class="hidden md:flex"> Contact </a>
+      <a href="#"> Careers </a>
+      <a href="#"> News </a>
+      <a href="#" class="hidden md:flex"> Engage </a>
+     <a href="#" class="hidden md:flex"> Locations </a>
+      </nav>
+      </section>
     </footer>
 
-    
+    <script src="./js/main.js" type="application/javascript"></script>
+   
   </body>
 </html>
